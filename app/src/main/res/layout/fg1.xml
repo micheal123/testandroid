@@ -11,8 +11,7 @@
         <!--android:layout_height="173dp"-->
         <!-->-->
     <!--</android.support.v4.view.ViewPager>-->
-
-//gaibian
+    
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="200dp"

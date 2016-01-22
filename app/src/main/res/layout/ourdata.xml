@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF" >
+
+    <LinearLayout
+        android:id="@+id/L"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#6c9dce"
+            android:paddingBottom="5dp"
+            android:paddingTop="0dp" >
+
+            <ImageView
+                android:id="@+id/Detail_Back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:src="@drawable/icon_back_enable" />
+
+
+
+            <TextView
+                android:id="@+id/Detail_AshameID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/Detail_Back"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="44dp"
+                android:singleLine="true"
+                android:text="走了有多久"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" >
+            </TextView>
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/add"
+                android:background="@drawable/add"
+                android:layout_marginRight="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_centerVertical="true"
+                android:layout_alignRight="@+id/Detail_AshameID"
+                android:layout_alignEnd="@+id/Detail_AshameID" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ListView
+        android:layout_below="@+id/L"
+        android:id="@+id/MyListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:dividerHeight="10dip"
+        android:paddingTop="5dp"
+        android:divider="#FFFFFF"
+        android:padding="10dp">
+
+    </ListView>
+
+
+</RelativeLayout>

@@ -40,6 +40,8 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
         fManager = getSupportFragmentManager();
        initViews();
 
+
+
     }
     public void initViews()
     {

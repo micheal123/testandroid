@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FAECD8"
+    >
+
+    
+
+    <ScrollView
+        android:id="@+id/Detail_ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="12dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true">
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/imageView_touxiang"
+                    android:background="@drawable/tou1"/>
+                <TextView
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:id="@+id/Detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="你男朋友知道你很多事情哦千万不要惹他不高兴的撒打算打算打算打算打算打算打算的"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+
+
+
+            </LinearLayout>
+            <TextView
+                android:orientation="vertical"
+                android:id="@+id/Item_MainText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_marginLeft="298dp"
+                android:text="13天"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

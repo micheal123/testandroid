@@ -64,9 +64,11 @@ public class TimeView extends Activity{
         adapter=new TimeAdapter(this);
 //        TimeSave timeSave=new TimeSave();
 //        String day=timeSave.count(2016,1,7);
-//        timeDao=new TimeDao();
-//        timeDao.setDay(day+"天");
-//        timeDao.setDetail("自2016年1月7日,我们已经在一起");
+        timeDao=new TimeDao();
+        allday = count(2016,1,7);
+        timeDao.setDay(allday+"天");
+        timeDao.setDetail("自2016年1月7日,我们已经在一起");
+        adapter.addList(timeDao);
 //        adapter.addList(timeDao);
 //         day=timeSave.count(2016,1,10);
 //         timeDao=new TimeDao();

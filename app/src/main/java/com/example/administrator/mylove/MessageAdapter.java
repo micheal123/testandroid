@@ -1,4 +1,4 @@
-package com.ourtime;
+package com.example.administrator.mylove;
 
 import android.view.View;
 import android.view.ViewGroup;
@@ -7,34 +7,33 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.content.Context;
 
-import com.example.administrator.mylove.R;
-
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by Administrator on 2016/1/19 0019.
  */
-public class TimeAdapter extends BaseAdapter {
+public class MessageAdapter extends BaseAdapter {
     private Context context;
-    private List<TimeDao> list = new ArrayList<TimeDao>();
+ List<MessageDao> list = new ArrayList<MessageDao>();
 
-    public TimeAdapter(Context context) {
+    public MessageAdapter(Context context) {
         this.context = context;
     }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
 
-        convertView = View.inflate(context, R.layout.title, null);
+        convertView = View.inflate(context, R.layout.title2, null);
         TextView detialText = (TextView) convertView
-                .findViewById(R.id.Detail_UserName);
+                .findViewById(R.id.Detail);
         TextView MainText = (TextView) convertView
-                .findViewById(R.id.Item_MainText);
-        TimeDao time = list.get(position);
+                .findViewById(R.id.Item_MainText1);
+//        ImageView imageView= (ImageView) convertView.findViewById(R.id.imageView_touxiang);
+        MessageDao time = list.get(position);
         detialText.setText(time.getDetail());
-        MainText.setText(time.getDay());
-
+        MainText.setText(time.getTime());
+//        imageView.setImageResource(R.drawable.tou1);
         return convertView;
     }
 
@@ -48,8 +47,8 @@ public class TimeAdapter extends BaseAdapter {
         return position;
     }
 
-    public void addList(TimeDao timeDao) {
-        list.add(timeDao);
+    public void addList(MessageDao MessageDao) {
+        list.add(MessageDao);
     }
 
     @Override

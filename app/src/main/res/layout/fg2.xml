@@ -1,31 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_container"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center"
-    android:background="#FAECD8"
-    android:orientation="vertical" >
+    android:layout_height="match_parent" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FAECD8">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下拉刷新"
+            android:id="@+id/pull_text"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp" />
 
-    <android.support.v4.view.ViewPager
-        android:id="@+id/viewPager"
-        android:layout_width="wrap_content"
-        android:layout_height="173dp"
-        >
-    </android.support.v4.view.ViewPager>
+        <ListView
+            android:id="@+id/MyListView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#767a7c"
+            android:layout_marginTop="30dp"
+            android:dividerHeight="1px">
+
+        </ListView>
 
 
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:id="@+id/mbg"
-        android:src="@mipmap/logo1"
-        />
+    </RelativeLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="早点睡觉哟"
-    />
-
-</LinearLayout>
+</android.support.v4.widget.SwipeRefreshLayout>
